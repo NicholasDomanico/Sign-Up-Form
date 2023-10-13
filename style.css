@@ -1,10 +1,49 @@
+:root {
+    --sky-blue: #92b9e3;
+    --mountain-gray: #586576;
+    --grass-green: #012016;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+label {
+    display: block;
+    margin: 1rem;
+    color: var(--mountain-gray);
+    font-family: 'Lora';
+}
+
+input {
+    display: block;
+    outline: none;
+    margin: 0.5rem;
+    padding: 2px;
+    height: 2rem;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    background-color: #012016;
+    color: white;
+    border-color: var(--mountain-gray);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: var(--sky-blue);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #site-wrapper {
     display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 #side-bar {
@@ -31,4 +70,28 @@
     color: white;
     width: 100%;
     height: 200px;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grass-green);
+}
+
+#sign-up-form > p {
+    color: white;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+#form {
+    display: flex;
+    margin: 4rem;
 }
