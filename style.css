@@ -9,41 +9,10 @@
     padding: 0;
 }
 
-label {
-    display: block;
-    margin: 1rem;
-    color: var(--mountain-gray);
-    font-family: 'Lora';
-}
-
-input {
-    display: block;
-    outline: none;
-    margin: 0.5rem;
-    padding: 2px;
-    height: 2rem;
-    font-family: 'Lora';
-    font-size: 1.5rem;
-    background-color: #012016;
-    color: white;
-    border-color: var(--mountain-gray);
-    border-style: solid;
-    border-radius: 5px;
-}
-
-input:focus {
-    border-color: var(--sky-blue);
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #site-wrapper {
     display: flex;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 #side-bar {
@@ -56,12 +25,6 @@ form {
     align-items: center;
 }
 
-#banner > h1 {
-    color: white;
-    font-family: 'Lora';
-    font-weight: bold;
-}
-
 #banner {
     display: flex;
     align-items: center;
@@ -70,6 +33,12 @@ form {
     color: white;
     width: 100%;
     height: 200px;
+}
+
+#banner > h1 {
+    color: white;
+    font-family: 'Lora', sans-serif, arial, helvetica;
+    font-weight: bold;
 }
 
 #sign-up-form {
@@ -84,14 +53,68 @@ form {
 
 #sign-up-form > p {
     color: white;
-    font-family: 'Lora';
+    font-family: 'Lora', sans-serif, arial, helvetica;
     font-size: 1.5rem;
     margin-left: 3rem;
     margin-right: 4rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
-#form {
+form {
     display: flex;
-    margin: 4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 45vw;
 }
+
+form > div > label {
+    display: block;
+    margin: 1rem;
+    color: var(--sky-blue);
+    font-family: 'Lora', sans-serif, arial, helvetica;
+    font-weight: bold;
+}
+
+form > div > input {
+    display: block;
+    outline: none;
+    padding: 4px;
+    height: 2rem;
+    font-family: 'Lora', sans-serif, arial, helvetica;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--grass-green);
+    border-color: var(--mountain-gray);
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+form > div > input:focus {
+    border-color: var(--sky-blue);
+    border-width: 0.1rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+button {
+    outline: none;
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--sky-blue);
+    border-color: var(--sky-blue);
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 1px 1px 5px black;
+    color: var(--grass-green);
+    font-family: 'Lora', sans-serif, arial, helvetica;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+button:active {
+    background-color: var(--mountain-gray);
+    border-color: var(--mountain-gray);
+}
+
